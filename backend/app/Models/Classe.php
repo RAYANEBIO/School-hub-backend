@@ -13,7 +13,8 @@ class Classe extends Model
         'nom',
         'annee_scolaire',
         'description',
-        'serie_id', 
+        'niveau_id',
+        'serie_id',
     ];
 
 
