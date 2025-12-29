@@ -16,7 +16,7 @@ class Classe extends Model
         'niveau_id',
         'serie_id',
     ];
-
+ 
 
     // Relation avec les élèves
     public function eleves()
