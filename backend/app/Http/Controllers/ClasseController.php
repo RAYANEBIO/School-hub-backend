@@ -6,6 +6,8 @@ use App\Models\Classe;
 use App\Models\Eleve;
 use Illuminate\Http\Request;
 use App\Services\ClasseService;
+use App\Models\Serie;
+
 
 class ClasseController extends Controller
 {
@@ -21,7 +23,8 @@ class ClasseController extends Controller
     public function index()
     {
         $classes = Classe::all();
-        return view('classes.index', compact('classes'));
+        $series = Serie::all(); // récupère toutes les séries
+        return view('classes.index', compact('classes', 'series'));
     }
 
     //Afficher une classe en détail
