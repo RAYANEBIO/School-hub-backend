@@ -9,12 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up(): void 
     {
         Schema::create('classes', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->foreignId('niveau_id')->constrained('niveaux_scolaires')->onDelete('cascade');
+            $table->foreignId('niveau_id')->nullable()->constrained();
+            $table->foreignId('serie_id')->constrained('series');
             $table->text('description')->nullable();
             $table->string('annee_scolaire');
             $table->timestamps();

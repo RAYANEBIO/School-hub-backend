@@ -91,7 +91,7 @@ Route::middleware('auth:sanctum')->group(function () {
             ->name('verification.status');
     });
     
-    // ----------------------------------------
+    /* // ----------------------------------------
     // Authentification à deux facteurs (2FA)
     // ----------------------------------------
     Route::prefix('2fa')->group(function () {
@@ -203,7 +203,7 @@ Route::middleware('auth:sanctum')->group(function () {
         // Révoquer une session spécifique
         Route::delete('/{tokenId}', [ProfileController::class, 'revokeSession'])
             ->name('sessions.revoke');
-    });
+    }); */
 });
 
 // ============================================
