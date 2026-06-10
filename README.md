@@ -581,6 +581,4 @@ Other      0.3%
 
 ---
 
-**Développé avec ❤️ par RAYANEBIO - Module Authentification & Sécurité**
 
-*School Hub v1.0.0 | Juin 2026*
